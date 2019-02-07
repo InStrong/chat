@@ -23,7 +23,7 @@ public class Server {
         authService = new DBAuthService();
         try (ServerSocket serverSocket = new ServerSocket(8189)) {
             System.out.println("Сервер запущен на порту 8189");
-            MainServer.logger.log(Level.INFO,"Сервер запущен на порту 8189");
+            MainServer.logger.log(Level.INFO,"Сервер запущен на порту 8189!");
             while (true) {
                 Socket socket = serverSocket.accept();
                 try {
